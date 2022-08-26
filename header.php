@@ -6,3 +6,12 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <?php wp_head(); ?>
   </head>
+  <body>
+      <?php
+        wp_nav_menu(
+                array(
+                        'menu' => 'menu-navegacao'
+                )
+        );
+        ?>
+  
