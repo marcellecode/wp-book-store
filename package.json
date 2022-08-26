@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "sass:compile": "sass --watch assets/style/style.scss:style.css --no-source-map  "
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

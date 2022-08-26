@@ -9,3 +9,35 @@ License URI: <https://www.gnu.org/licenses/gpl-2.0.html>
 Text Domain: my-custom-theme
 Tags: template, book store
 */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-site-book-store {
+  background-color: #9996C3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#menu-menu-principal {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#menu-menu-principal li {
+  margin: 0px 10px 0px 10px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}

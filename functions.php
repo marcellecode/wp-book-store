@@ -6,7 +6,10 @@
     }
     add_action('init', 'admin_bar' );
 
-    add_theme_support( 'custom-logo' );
+    function book_store_add_functionalities() {
+        add_theme_support( 'custom-logo' );
+    }
+    add_action('after_setup_theme', 'book_store_add_functionalities');
 
     function book_store_register_menu(){
         register_nav_menu(
