@@ -18,4 +18,19 @@
         );
     }
     add_action('init', 'book_store_register_menu');
+
+    function book_store_custom_header() {
+        $args = array(
+            'default-image'      => get_template_directory_uri() . 'img/default-image.jpg',
+            'default-text-color' => '000',
+            'width'              => 1000,
+            'height'             => 250,
+            'flex-width'         => true,
+            'flex-height'        => true,
+        );
+
+        add_theme_support('custom-header', $args);
+    }
+
+    add_action( 'after_setup_theme', 'book_store_custom_header' );
 ?> 

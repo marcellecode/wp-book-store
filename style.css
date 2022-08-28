@@ -21,7 +21,6 @@ body {
 }
 
 .header-site-book-store {
-  background-color: #9996C3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,4 +39,16 @@ body {
   margin-right: 10px;
   margin-bottom: 0px;
   margin-left: 10px;
+}
+
+.header-site-book-store__background {
+  position: absolute;
+}
+
+.header-site-book-store__logo {
+  z-index: 0;
+}
+
+.header-site-book-store__menu-page {
+  z-index: 0;
 }
