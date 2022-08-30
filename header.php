@@ -10,9 +10,14 @@
   <body>
     <?php if((get_header_image())) : ?>
       <header class="header-site-book-store">
-          <img class="header-site-book-store__background" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+          <!-- <img class="header-site-book-store__background" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"> -->
           <div class="header-site-book-store__logo">
-              <?php the_custom_logo(); ?>
+            <?php
+                  $argumentos = array( 'section_title' => 'hello world' );
+                  // echo ($argumentos["section_title"]);
+                  get_template_part( 'template-parts/logo', 'null', array( 'section_title' => 'hello world' ) ); 
+            ?>
+              <!-- <?php the_custom_logo(); ?> -->
           </div>
           <div class="header-site-book-store__menu-page">
               <nav>
